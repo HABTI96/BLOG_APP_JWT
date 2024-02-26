@@ -26,12 +26,7 @@
   },
   {
     "id": 6,
-    "name": "iPhone XR",
-    "price": 400.99
-  },
-  {
-    "id": 7,
-    "name": "PS 4",
-    "price": 300
+    "name": "iphon XR",
+    "price": 400
   }
 ]
