@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const jwt = require('jsonwebtoken');
-// const products = require("../products.json")
+
 const {getProducts, getProductById, creatProduct, updateProduct, deletePorduct} = require("../controllers/postController")
 
 const verifyToken = (req, res, next)=>{

@@ -51,10 +51,11 @@ const updateProduct = (req, res)=>{
 
 const deletePorduct = (req, res)=>{
     const id_url = req.params.id
-	const find_id = products.filter(x=>x.id != id_url)
-	products = find_id
-    res.send(products)
-    // res.send("the product was deleted")
-    // saveData()
+	const find_id = products.filter(x=>x.id == id_url)
+	const find_ndx = products.findIndex(x=>x == find_id[0])
+	products.splice(find_ndx, 1)
+	// res.json(products)
+    res.send("the product was deleted")
+    saveData()
 }
 module.exports = {getProducts, getProductById, searchForProduct, updateProduct,creatProduct, deletePorduct}
